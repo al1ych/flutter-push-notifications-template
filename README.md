@@ -23,17 +23,25 @@
    
 
 ## 6. pubspec:
+   
    firebase_core: ^1.15.0
+   
    firebase_messaging: ^11.2.15
+   
 flutter pub get
 
 ## 7. пробуем запустить если есть проблема с версией меняем min sdk (искать в Заметках Программиста по тегу #f)
    варнинги как на картинке это норма
 
 ## 8. мейн изменить на такой:
+
    void main() async {
+   
       WidgetsFlutterBinding.ensureInitialized();
+      
       await Firebase.initializeApp();
+      
       runApp(MyApp());
+      
    }
    

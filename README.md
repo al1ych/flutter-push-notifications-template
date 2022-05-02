@@ -1,4 +1,4 @@
-# руководство по подключению пушей
+# Руководство по подключению пушей
 
 ## 1. создаем файрбейз проект
 ![IMAGE 2022-05-02 15:43:15](https://user-images.githubusercontent.com/19241702/166235441-475057d5-9192-47c9-80f6-16e7859de477.jpg)
@@ -25,15 +25,15 @@
 ## 6. pubspec:
    firebase_core: ^1.15.0
    firebase_messaging: ^11.2.15
-> flutter pub get
+flutter pub get
 
 ## 7. пробуем запустить если есть проблема с версией меняем min sdk (искать в Заметках Программиста по тегу #f)
    варнинги как на картинке это норма
 
 ## 8. мейн изменить на такой:
-   > void main() async {
-      > WidgetsFlutterBinding.ensureInitialized();
-      > await Firebase.initializeApp();
-      > runApp(MyApp());
-   > }
+   void main() async {
+      WidgetsFlutterBinding.ensureInitialized();
+      await Firebase.initializeApp();
+      runApp(MyApp());
+   }
    
